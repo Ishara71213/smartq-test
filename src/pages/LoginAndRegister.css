@@ -1,0 +1,29 @@
+.loginAndRegister-container{
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('../images/close-up-doctor-front-bright-background_53419-4416.avif');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+   
+}
+.loginAndRegister-wrapper{
+   padding-left: 10vw;
+   align-self: stretch;
+}
+
+@media only screen and (max-width: 780px) {
+  
+    .loginAndRegister-wrapper{
+        padding-left: 0;
+        margin: 0 auto;
+     }
+}
+@media only screen and (max-width: 520px) {
+    .loginAndRegister-container{
+        background-image: none;
+    }
+}
