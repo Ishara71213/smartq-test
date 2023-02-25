@@ -1,0 +1,38 @@
+import "./BillingForm.css";
+import { useState } from "react";
+import { BillingInputProps } from "./BillingInputProps";
+import { InputType1 } from "../../common/inputType1/InputType1";
+
+export const BillingForm = () => {
+  const [valuesReg, setValuesReg] = useState({
+    firstName: "",
+    sureName: "",
+    contactNumber: "",
+    email: "",
+    password: "",
+    confirmpassword: "",
+  }); //to hold register user data
+
+  const handleOnChange = (e) => {
+    // e.preventDefault()
+    setValuesReg({ ...valuesReg, [e.target.name]: e.target.value });
+    console.log(valuesReg);
+  };
+  return (
+    <div>
+      <div className="RegisterForm-inputs">
+        {BillingInputProps.map((input) => (
+          <InputType1
+            key={input.id}
+            {...input}
+            value={valuesReg[input.name]}
+            handleOnChange={handleOnChange}
+          />
+        ))}
+        <button className="loginForn-btn" onClick={login}>
+          Submit
+        </button>{" "}
+      </div>
+    </div>
+  );
+};
