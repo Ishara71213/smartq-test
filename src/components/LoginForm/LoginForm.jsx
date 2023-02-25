@@ -7,7 +7,7 @@ import { InputsProps } from "./InputProps";
 //hooks
 import { useState } from "react";
 
-export const LoginForm = () => {
+export const LoginForm = (props) => {
   const [valuesLogin, SetValuesLogin] = useState({
     email: "",
     password: "",
@@ -20,7 +20,11 @@ export const LoginForm = () => {
     SetValuesLogin({ ...valuesLogin, [e.target.name]: e.target.value });
     console.log(valuesLogin);
   };
-  const login = (e) => {};
+  const handleFormSwap = () => {
+    props.formToggle(!props.currentState);
+  };
+
+  const login = () => {};
 
   return (
     <div className="LoginFormcontainer">
@@ -45,7 +49,10 @@ export const LoginForm = () => {
           </button>
           <div className="loginForm-register">
             Don't Have an account?
-            <span id="register"> Register</span>
+            <span id="register" onClick={handleFormSwap}>
+              {" "}
+              Register
+            </span>
           </div>
         </form>
       </div>

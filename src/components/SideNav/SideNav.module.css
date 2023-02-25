@@ -1,0 +1,38 @@
+.navContainer{
+    /* min-width: 200px; */
+    max-width: 15vw;
+    min-width: 250px;
+    height: 88vh;
+    background-color: #0F4674;
+}
+.navigation{
+    padding-top: 20px;
+}
+.linkContainer{
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.linkImgContainer{
+    font-size: 25px;
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    color: #f7f7f7;
+    
+}
+
+.linkTextContainer{
+    font-size: 14px;
+    font-weight: 400;
+    color: #CBD0D6;
+    padding-right: 10px;
+    transition: 0.2s;
+}
+.linkTextContainer:hover {
+    color: #aeb9d2;
+    transition: 0.2s;
+}
