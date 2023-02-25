@@ -20,6 +20,15 @@ export const BillingInputProps = [
   },
   {
     id: 3,
+    name: "patientName", // e.trget.name reffers to this
+    type: "text",
+    placeholder: "Please Enter",
+    errorMessage: "*Patient Name Required",
+    required: true,
+    label: "Patient Name",
+  },
+  {
+    id: 4,
     name: "doctorName", // e.trget.name reffers to this
     type: "text",
     placeholder: "Please Enter",
@@ -28,7 +37,7 @@ export const BillingInputProps = [
     label: "Doctor Name",
   },
   {
-    id: 4,
+    id: 5,
     name: "dateAndTime", // e.trget.name reffers to this
     type: "date",
     placeholder: "Date And Time",
@@ -37,7 +46,7 @@ export const BillingInputProps = [
     label: "Date and Time",
   },
   {
-    id: 5,
+    id: 6,
     name: "charge",
     type: "text",
     placeholder: "Doctor Charge",
@@ -48,7 +57,7 @@ export const BillingInputProps = [
     label: "Charge",
   },
   {
-    id: 6,
+    id: 7,
     name: "tax",
     type: "text",
     placeholder: "Enter Tax",
@@ -59,7 +68,7 @@ export const BillingInputProps = [
     label: "Tax",
   },
   {
-    id: 7,
+    id: 8,
     name: "total",
     type: "text",
     placeholder: "Total Amount",

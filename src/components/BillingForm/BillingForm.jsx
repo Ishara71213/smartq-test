@@ -5,12 +5,14 @@ import { InputType1 } from "../../common/inputType1/InputType1";
 
 export const BillingForm = () => {
   const [valuesReg, setValuesReg] = useState({
-    firstName: "",
-    sureName: "",
-    contactNumber: "",
-    email: "",
-    password: "",
-    confirmpassword: "",
+    billNo: "",
+    patientId: "",
+    patientName: "",
+    doctorName: "",
+    dateAndTime: "",
+    charge: "",
+    tax: "",
+    total: "",
   }); //to hold register user data
 
   const handleOnChange = (e) => {
@@ -29,10 +31,8 @@ export const BillingForm = () => {
             handleOnChange={handleOnChange}
           />
         ))}
-        <button className="loginForn-btn" onClick={login}>
-          Submit
-        </button>{" "}
       </div>
+      <button className="loginForn-btn">Submit</button>{" "}
     </div>
   );
 };
