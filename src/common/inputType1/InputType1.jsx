@@ -15,7 +15,6 @@ export const InputType1 = (props) => {
       <input
         className="inputType1-text"
         id={id}
-        formnovalidate
         {...inputProps}
         onChange={handleOnChange}
         onBlur={handleFocus} //to toggle on of error msg
